@@ -1,0 +1,70 @@
+14307 messages loaded | 34 matched (owner only)
+[2026-11-11 14:11:42] ** OWNER ** @Guidegamer016: guide_fan_66, Giftcode - Live8, Token id - 48104
+[2026-11-11 14:13:25] ** OWNER ** @Guidegamer016: ansh, Giftcode - OP65, TOKEN ID- 77783
+[2026-11-11 14:18:46] ** OWNER ** @Guidegamer016: mrislem, Giftcode - NEW150, Giftcode - 49048
+[2026-11-11 14:25:06] ** OWNER ** @Guidegamer016: TUNG-TUNG , GIFTCODE - LIVE8, TOKEN ID - 16726
+[2026-11-11 14:26:09] ** OWNER ** @Guidegamer016: sadiya-appu, Giftcode - LIVE8, Token id - 49866
+[2026-11-11 14:27:17] ** OWNER ** @Guidegamer016: beatthebounce, Giftcode - OP65, Token id - 54564
+[2026-11-11 14:30:21] ** OWNER ** @Guidegamer016: maruf Hussain, Giftcode - Live8, Token id - 54564
+[2026-11-11 14:33:20] ** OWNER ** @Guidegamer016: NEHAKUMARI, Giftcode - NEW150, TOKEN ID - 17782
+[2026-11-11 14:34:09] ** OWNER ** @Guidegamer016: ROOM ID- 1214464587
+[2026-11-11 14:35:43] ** OWNER ** @Guidegamer016: ROOM ID- 1214464587 PASS- 444
+[2026-11-11 14:36:41] ** OWNER ** @Guidegamer016: Mdarafat, Giftcode - WOW100, TOKEN ID - 13244
+[2026-11-11 14:39:03] ** OWNER ** @Guidegamer016: arshiiiff, Giftcode - OP65, Token id - 31465
+[2026-11-11 14:42:50] ** OWNER ** @Guidegamer016: GUIDE_KA_GF, Giftcode - Live8, Token id - 26593
+[2026-11-11 15:00:12] ** OWNER ** @Guidegamer016: whytuta, Giftcode - Live8, Token id - 96146
+[2026-11-11 15:01:50] ** OWNER ** @Guidegamer016: MDARAFAT, GIFTCODE - WOW100, TOKEN ID - 17143
+[2026-11-11 15:05:09] ** OWNER ** @Guidegamer016: eSports, Giftcode - wow100, Token id - 50956
+[2026-11-11 15:06:01] ** OWNER ** @Guidegamer016: Rubel, Giftcode - wow100, Token id - 59479
+[2026-11-11 15:07:11] ** OWNER ** @Guidegamer016: ajay_diwakar, Giftcode - live9, TOKEN ID - 27502
+[2026-11-11 15:08:32] ** OWNER ** @Guidegamer016: frabi, Giftcode - Live8, Token id - 66451
+[2026-11-11 15:09:50] ** OWNER ** @Guidegamer016: queen_pagli, GIFTCODE - NEW150, TOKEN ID - 17517
+[2026-11-11 15:12:47] ** OWNER ** @Guidegamer016: Rubel, Giftcode - Op67, Token id - 72466
+[2026-11-11 15:13:39] ** OWNER ** @Guidegamer016: epicnight, Giftcode - OP65, tokenid- 57732
+[2026-11-11 15:28:40] ** OWNER ** @Guidegamer016: ritu, Giftcode - Live8, Token id - 32159
+[2026-11-11 15:42:44] ** OWNER ** @Guidegamer016: anass, Giftcode - Live8, token id - 41441
+[2026-11-11 15:43:23] ** OWNER ** @Guidegamer016: rituaktar, Giftcode - Live8, Token id - 40998
+[2026-11-11 15:45:51] ** OWNER ** @Guidegamer016: haymaha, Giftcode - OP65, TOKEN ID - 10164
+[2026-11-11 15:50:39] ** OWNER ** @Guidegamer016: Mickey, Giftcode - Live8, token id - 78033
+[2026-11-11 16:04:19] ** OWNER ** @Guidegamer016: varilistik, Giftcode - WOW100, Token id - 10354
+[2026-11-11 16:07:45] ** OWNER ** @Guidegamer016: ritu, Giftcode - LIVE8, TOKEN ID - 41007
+[2026-11-11 16:30:06] ** OWNER ** @Guidegamer016: mosaab, Giftcode - Live8, token. id - 12647
+[2026-11-11 16:31:55] ** OWNER ** @Guidegamer016: somserali, Giftcode - NEW150, TOKEN ID - 10863
+[2026-11-11 16:35:28] ** OWNER ** @Guidegamer016: mrislem, GIFTCODE - SUPER13, Token id -37909
+[2026-11-11 16:36:48] ** OWNER ** @Guidegamer016: varilistik, Giftcode - WOW100, TOKEN ID - 10354
+[2026-11-11 16:41:01] ** OWNER ** @Guidegamer016: GIFTCODE - https://guide-gamer.github.io/giftcod...
+
+claims (32):
+  LIVE8 uid=- token=48104 -> NO-UID  [@Guidegamer016]
+  OP65 uid=- token=77783 -> NO-UID  [@Guidegamer016]
+  NEW150 uid=- token=- -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=16726 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=49866 -> NO-UID  [@Guidegamer016]
+  OP65 uid=- token=54564 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=54564 -> NO-UID  [@Guidegamer016]
+  NEW150 uid=- token=17782 -> NO-UID  [@Guidegamer016]
+  WOW100 uid=- token=13244 -> NO-UID  [@Guidegamer016]
+  OP65 uid=- token=31465 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=26593 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=96146 -> NO-UID  [@Guidegamer016]
+  WOW100 uid=- token=17143 -> NO-UID  [@Guidegamer016]
+  WOW100 uid=- token=50956 -> NO-UID  [@Guidegamer016]
+  WOW100 uid=- token=59479 -> NO-UID  [@Guidegamer016]
+  LIVE9 uid=- token=27502 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=66451 -> NO-UID  [@Guidegamer016]
+  NEW150 uid=- token=17517 -> NO-UID  [@Guidegamer016]
+  OP67 uid=- token=72466 -> NO-UID  [@Guidegamer016]
+  OP65 uid=- token=57732 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=32159 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=41441 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=40998 -> NO-UID  [@Guidegamer016]
+  OP65 uid=- token=10164 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=78033 -> NO-UID  [@Guidegamer016]
+  WOW100 uid=- token=10354 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=41007 -> NO-UID  [@Guidegamer016]
+  LIVE8 uid=- token=- -> NO-UID  [@Guidegamer016]
+  NEW150 uid=- token=10863 -> NO-UID  [@Guidegamer016]
+  SUPER13 uid=- token=37909 -> NO-UID  [@Guidegamer016]
+  WOW100 uid=- token=10354 -> NO-UID  [@Guidegamer016]
+  HTTPS uid=- token=- -> NO-UID  [@Guidegamer016]
+claims -> out/claims.jsonl
