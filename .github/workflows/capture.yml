@@ -1,12 +1,15 @@
 # Captures YouTube live chat for @Guidegamer016 streams into data/<UTC-date>/<videoId>/
-# - schedule: every 15 min, auto-detects a live stream and starts capturing it
-# - workflow_dispatch: paste any live/replay YouTube link (gh CLI: gh workflow run capture.yml -f url=<link>)
+# - schedule: every 15 min between 12:00–17:45 UTC (5:00–10:45 PM PKT / 5:30–11:15 PM IST),
+#   the window the owner usually goes live in; auto-detects a live stream and captures it.
+#   Add more cron lines if streams shift (cron is UTC; PKT = UTC+5).
+# - workflow_dispatch: paste any live/replay YouTube link (GitHub UI: Actions → capture →
+#   Run workflow → paste into "url"; or gh CLI: gh workflow run capture.yml -f url=<link>)
 # Output per video: chat.jsonl (ALL messages), claims.jsonl + owner_scan.txt (giftcode claims vs codes.json),
 # chat_<admin>_admin_comments.txt (per-username admin dumps, same as local workflow).
 name: capture
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/15 12-17 * * *'   # PKT 5:00 PM – 10:45 PM
   workflow_dispatch:
     inputs:
       url:
