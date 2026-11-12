@@ -25,7 +25,7 @@ jobs:
     outputs:
       ids: ${{ steps.pick.outputs.ids }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: pick
         env:
           URL: ${{ inputs.url }}
@@ -58,7 +58,7 @@ jobs:
       matrix:
         video: ${{ fromJSON(needs.find.outputs.ids) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: pull chat   # hard cap 5h: longer streams lose the tail here — re-dispatch with the link once ended to get the full replay
         run: |
           mkdir -p out
