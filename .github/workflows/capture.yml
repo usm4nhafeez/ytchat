@@ -4,8 +4,9 @@
 #   Add more cron lines if streams shift (cron is UTC; PKT = UTC+5).
 # - workflow_dispatch: paste any live/replay YouTube link (GitHub UI: Actions → capture →
 #   Run workflow → paste into "url"; or gh CLI: gh workflow run capture.yml -f url=<link>)
-# Output per video: chat.jsonl (ALL messages), claims.jsonl + owner_scan.txt (giftcode claims vs codes.json),
-# chat_<admin>_admin_comments.txt (per-username admin dumps, same as local workflow).
+# Output per video (all written by build_data.js): chat.jsonl (ALL messages), admin_comments.txt
+# (one merged owner/mod file), triples.jsonl (uid+code+token side by side), uid_index.json
+# (uid -> every message mentioning it), codes.json (multipliers proven in that stream).
 name: capture
 on:
   schedule:
@@ -64,14 +65,13 @@ jobs:
           mkdir -p out
           timeout 300m node ytchat.js pull "${{ matrix.video }}" -o out/chat.jsonl || echo "pull stopped: $?" > out/pull.err
           [ -s out/chat.jsonl ] || { cat out/pull.err 2>/dev/null; echo "no chat (replay not ready / captcha / disabled)"; exit 1; }
-      - name: analyze
-        run: |
-          node ytchat.js scan out/chat.jsonl --owner --codes codes.json --claims-out out/claims.jsonl > out/owner_scan.txt
-          node admin_comments.js out/chat.jsonl
+      - name: analyze   # one pass -> admin_comments.txt, triples.jsonl, uid_index.json, codes.json
+        run: node build_data.js out/chat.jsonl
       - name: commit into data/<date>/<videoId>/
         run: |
           DIR="data/$(date -u +%F)/${{ matrix.video }}"
           mkdir -p "$DIR" && cp -r out/* "$DIR"/
+          rm -f "$DIR/chat_"*_admin_comments.txt "$DIR/claims.jsonl" "$DIR/owner_scan.txt"   # retire the old per-admin / scan outputs
           git config user.name ytchat-bot && git config user.email ytchat-bot@users.noreply.github.com
-          git add -f "$DIR"   # -f: our .gitignore also matches the data/ outputs
+          git add -A -f "$DIR"   # -A: removes the retired files too; -f: our .gitignore also matches the data/ outputs
           git diff --cached -q || { git commit -qm "capture ${{ matrix.video }} ($(($(wc -l < "$DIR/chat.jsonl")-1)) msgs)"; git push; }
