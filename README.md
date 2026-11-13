@@ -12,14 +12,21 @@ data/
 └── 2026-11-12/            # UTC date the capture was saved
     └── NSjjFsReZaY/       # YouTube video id
         ├── chat.jsonl                          # ALL chat messages (one JSON per line)
-        ├── claims.jsonl                        # every giftcode claim found, with a verdict
-        ├── owner_scan.txt                      # human-readable owner-announcement log
-        └── chat_<admin>_admin_comments.txt     # every admin/owner comment, one file per username
+        ├── admin_comments.txt                  # every admin/owner comment, merged, "@name: text"
+        ├── triples.jsonl                       # uid + code + token side by side (the 3 attributes)
+        ├── uid_index.json                      # uid → every chat message that mentions it
+        └── codes.json                          # multipliers proven in THIS stream (see below)
 ```
 
-`claims.jsonl` verdicts: `VERIFIED` (token matches the multiplier in `codes.json`), `WRONG`,
-`REVERSED` (unknown code, unique 4-digit multiplier found — add it to `codes.json`), `AMBIGUOUS`,
-`IMPOSSIBLE`, `NO-UID` (owner announced code+token but no UID was in the message).
+`codes.json` (per stream) verdicts, printed by `build_data.js`: `VERIFIED` (uid+token pairs match
+the multiplier in the repo's global `codes.json`), `REVERSED` (unknown code, multiplier found by
+scoring all uid+token pairs — add it to the global table), `AMBIGUOUS` (no single multiplier
+explains most pairs), or the code stays absent when only announced (no winner UID posted in chat).
+
+`triples.jsonl` sources: `claim` = one viewer message carried uid+token itself; `name-join` = the
+owner announced "Name, CODE, token" and someone with that display name posted a UID in chat
+(winners sometimes post several UIDs or share nicknames, so expect a few wrong pairs — the
+majority scoring in `codes.json` is what filters them).
 
 ## How it runs automatically
 
@@ -55,8 +62,7 @@ Requires Node.js 18+. From this folder:
 
 ```
 node ytchat.js pull <video-url-or-id> -o chat.jsonl
-node ytchat.js scan chat.jsonl --owner --codes codes.json --claims-out claims.jsonl
-node admin_comments.js chat.jsonl
+node build_data.js chat.jsonl
 ```
 
 ## codes.json
